@@ -54,8 +54,8 @@ const deleteNote = (id) =>
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
-
-  if (activeNote.id) {
+  if (activeNote.tip_id) {
+    console.log ('active note 11');
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
@@ -161,6 +161,7 @@ const renderNoteList = async (notes) => {
   jsonNotes.forEach((note) => {
     const li = createLi(note.title);
     li.dataset.note = JSON.stringify(note);
+//      delBtnEl.addEventListener('click', handleNoteDelete);
 
     noteListItems.push(li);
   });
