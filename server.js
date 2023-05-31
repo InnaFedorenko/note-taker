@@ -9,6 +9,12 @@ const app = express();
 // create a port number that is free
 const PORT = 3001;
 
+const api = require("./routes/index");
+
+// Middleware for parsing JSON and urlencoded form data
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use('/api', api);
 // connect public folder and install the static middleware
 app.use(express.static('public'));
 
