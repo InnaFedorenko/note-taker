@@ -21,7 +21,6 @@ app.use(express.static('public'));
 // Read homepage (connect to index.html)
 // GET /
 app.get('/', (req, res) => {
-  console.log("homepage route");
 
   // sends a home.html file to the browser
   
@@ -31,7 +30,6 @@ app.get('/', (req, res) => {
 // GET /
 app.get('/notes', (req, res) => {
   console.log("notes route");
-  // sends a home.html file to the browser
   res.sendFile(path.join(__dirname, '', 'public/notes.html'));
 });
 // listen for requests

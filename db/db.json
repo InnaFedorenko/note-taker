@@ -1,19 +1,17 @@
 [
     {
-        "title": "Test Title1",
-        "text": "Test text1"
+        "title": "Inna's Note",
+        "text": "Validate functionality",
+        "tip_id": "554f"
     },
     {
-        "title": "Test Title2",
-        "text": "Test text2"
+        "title": "Read Me",
+        "text": "Create read me file",
+        "tip_id": "bc24"
     },
     {
-        "title": "Test Title2",
-        "text": "Test text2"
-    },
-    {
-        "title": "My tip",
-        "text": "Text of My tip",
-        "tip_id": "06dc"
+        "title": "Deployment",
+        "text": "deploy to herocu",
+        "tip_id": "88d3"
     }
 ]
