@@ -27,7 +27,7 @@ const path = require('path');
 const app = express();
 
 // create a port number that is free
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const api = require("./routes/index");
 
