@@ -55,7 +55,6 @@ const deleteNote = (id) =>
 const renderActiveNote = () => {
   hide(saveNoteBtn);
   if (activeNote.tip_id) {
-    console.log ('active note 11');
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
@@ -91,6 +90,7 @@ const handleNoteDelete = (e) => {
   }
   deleteNote(noteId).then(() => {
     getAndRenderNotes();
+      activeNote = {};
     renderActiveNote();
   });
 };
