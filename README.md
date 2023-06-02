@@ -1,6 +1,7 @@
 # Note Taker
 ## Table of Contents
 - [Description](#description)
+- [Screenshot](#description)
 - [Installation]( #installation)
 - [Usage](#usage)
 - [License](#license)
@@ -12,6 +13,9 @@
 - [GiHub Link](https://github.com/InnaFedorenko/note-taker)
 - [App Link](https://note-taker-if.herokuapp.com/)
 - Date: 06-02-2023
+## Screenshot
+![Screenshot](/note-taker-if.herokuapp.com_notes.png "Note Taker screenshot")
+
 
 ### Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
